@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Εταιρία Διαχείρισης Φυσικού Αερίου/Υπολογισμός Κόστους</title>
+    <script src="cost_calculate.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header style="margin-left: 13px; background-color:#0049B7; border:3px solid;">
+      <h1 style="color:#ff1d58; text-align: center; font-weight:bold;">
+        Εταιρία Διαχείρισης Φυσικού Αερίου</h1>
+      </br>
+      <nav style="padding-top: 17px">
+        <ul class="my_lst">
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="profile.html">Προφίλ Εταιρίας</a></li>
+          <li><a href="cost.html">Υπολογισμός Κόστους</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+          <li><a href="admin.html">Σελίδα Διαχείρισης</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--  Υπολογισμός Κόστους Φυσικού Αερίου -->
+    </br>
+    </br>
+    <section style="margin-left: 25px;">
+      <h2>Υπολογισμός Κόστους Φυσικού Αερίου</h2>
+      </br>
+      </br>
+      <form>
+        <label for="kwh">Πλήθος Κιλοβατώρων που καταναλώνετε:</label><br />
+        <input style="color: black" type="number" id="kwh" name="kwh"><br>
+        </br>
+        <label for="days">Πλήθος ημερών κατά τις οποίες καταναλώνετε τις 
+            συγκεκριμένες κιλοβατώρες:</label><br />
+        <input style="color: black" type="number" id="days" name="days"><br>
+        </br>
+        <label for="size">Μέγεθος του χώρου σας σε τετραγωνικά μέτρα:</label><br />
+        <input style="color: black" type="number" id="size" name="size"><br>
+      </form>
+      </br>
+      </br>
+      <button type="button" onClick="calculateCost()">
+          Υπολογισμός
+      </button>
+      </br>
+      </br>
+      <h4>Τελικό Κόστος:</h4>
+      <div id="result">
+          <h2><h2>
+      </div>
+    </section>
+    </br>
+    </br>
+    
+    <!-- Footer -->
+    <footer class="gridtype-1">
+      <div>
+        <p style="float:right; color: white; margin-right: 6px; font-size: 11px; font-family: Verdana,
+        Geneva, Tahoma, sans-serif;">
+          Τηλέφωνο: <a style="color: cyan;" href="tel:+302104142235">+30 210 4142235</a>
+        </p>
+        <p style="float:right; color: white; margin-right: 6px; font-size: 11px; font-family: Verdana,
+        Geneva, Tahoma, sans-serif;"> 
+        Email: <a style="color: cyan;" href="mailto:gramds@unipi.gr">gramds@unipi.gr</a>
+        </p>
+        <p style="float:right; color: white; margin-right: 6px; font-size: 11px; font-family: Verdana,
+        Geneva, Tahoma, sans-serif;"> 
+        Διεύθυνση: <a style="color: cyan;" href="https://maps.google.com/" target="blank">Μ. Καραολή & Α. Δημητρίου 80, 18534 Πειραιάς</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,217 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c89666;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1101px) {
+  header > nav {
+    margin-right: 200px;
+    margin-left: 385px;
+  }
+
+  .my_lst {
+    background-position: center;
+  }
+
+  .my_lst li {
+    background-position: center;
+  }
+
+  .my_lst a {
+    color: #fff685;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  table {
+    border: 1;
+  }
+
+  tr {
+    background-color: lightblue;
+  }
+
+  .gridtype-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .gridtype-1 #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .gridtype-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+/* Tablet View */
+@media only screen and (max-width: 1100px) and (min-width: 780px) {
+  * {
+    max-width: 1099px;
+  }
+
+  header ul {
+    margin-right: 300px;
+  }
+
+  header > nav {
+    margin-right: 100px;
+    margin-left: 225px;
+  }
+
+  .my_lst {
+    background-position: center;
+  }
+
+  .my_lst li {
+    background-position: center;
+  }
+
+  .my_lst a {
+    color: #fff685;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  footer > div {
+    margin-right: 300px;
+  }
+
+  .gridtype-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gridtype-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+/* Mobile View */
+@media only screen and (max-width: 779px) {
+  * {
+    max-width: 319px;
+  }
+
+  header > h1 {
+    font-size: 130%;
+  }
+
+  header ul {
+    margin-right: 300px;
+  }
+
+  .my_lst {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .my_lst li {
+    font-size: 40%;
+  }
+
+  .my_lst a {
+    color: #fff685;
+    font-weight: bold;
+  }
+
+  img {
+    width: 95%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .yt_video {
+    width: 95%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .map {
+    size: 50%;
+  }
+
+  footer > div {
+    margin-right: 250px;
+  }
+
+  .gridtype-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gridtype-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .gridtype-2 #resp_im {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
